@@ -20,6 +20,11 @@
     <packagedResources>
         <packagedResource>
             <packageName>com.google.android.gms</packageName>
+            <folderName>gps-basement-res</folderName>
+        </packagedResource>
+
+        <packagedResource>
+            <packageName>com.google.android.gms.ads</packageName>
             <folderName>gpsads-res</folderName>
         </packagedResource>
     </packagedResources>
