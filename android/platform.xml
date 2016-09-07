@@ -2,12 +2,25 @@
 
     <packagedDependencies>
         <packagedDependency>google-play-services.jar</packagedDependency>
+
+		<packagedDependency>play-services-basement.jar</packagedDependency>
+		<packagedDependency>supportv4.jar</packagedDependency>
+
+        <packagedDependency>support-core-utils.jar</packagedDependency>
+        <packagedDependency>support-core-utils-internal_impl.jar</packagedDependency>
+
+        <packagedDependency>support-fragment.jar</packagedDependency>
+        <packagedDependency>support-fragment-internal_impl.jar</packagedDependency>
+
+        <packagedDependency>support-compat.jar</packagedDependency>
+        <packagedDependency>support-annotations.jar</packagedDependency>
+
     </packagedDependencies>
 
     <packagedResources>
         <packagedResource>
             <packageName>com.google.android.gms</packageName>
-            <folderName>res</folderName>
+            <folderName>gpsads-res</folderName>
         </packagedResource>
     </packagedResources>
     
