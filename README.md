@@ -62,6 +62,8 @@ support-annotations-x.x.x.aar -> support-annotations.jar
 
 After making the necessary modifications, build the new ANE by following the [building](#building) instructions below.
 
+#### Building
+
 ##### Requirements:
 - Mac OS X
 - XCode

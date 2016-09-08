@@ -13,6 +13,7 @@
         <packagedDependency>support-fragment-internal_impl.jar</packagedDependency>
 
         <packagedDependency>support-compat.jar</packagedDependency>
+        <packagedDependency>support-compat-internal_impl.jar</packagedDependency>
         <packagedDependency>support-annotations.jar</packagedDependency>
 
     </packagedDependencies>
