@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="Google Play Services Android Build Script" default="all">
 
-    <record name="build.log" loglevel="verbose" action="start" />
+     <record name="build.log" loglevel="verbose" action="start" />
 
     <!-- Config File -->
     <property file="build.config"/>
@@ -39,17 +39,14 @@
             <!-- Copy over any extra libs needed - they better be mentioned in the platform.xml! -->
             <path refid="classpath" />
 
+            <!-- Copy all resources from resources folder -->
+            <fileset dir="${resources.dir}" />
+
+
             <!-- Copy over platform.xml -->
             <file file="platform.xml" />
 
         </copy>
-
-        
-        <mkdir dir="${output.dir}/res" />
-        <copy todir="${output.dir}/res">
-            <fileset dir="${res.dir}" />
-        </copy>
-
     </target>
 
     <target name="clean">

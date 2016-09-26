@@ -5,9 +5,13 @@ build/
 # Other files and folders
 .settings/
 
+build.config
+
 # Java class files
 *.class
 *.classpath
+
+
 
 # Log Files
 *.log
