@@ -12,4 +12,23 @@
 
   </packagedDependencies>
 
+  <packagedResources>
+    <packagedResource>
+      <packageName>com.google.android.gms.ads</packageName>
+      <folderName>play-services-ads-11.0.1</folderName>
+    </packagedResource>
+    <packagedResource>
+      <packageName>com.google.android.gms.ads</packageName>
+      <folderName>play-services-ads-lite-11.0.1</folderName>
+    </packagedResource>
+    <packagedResource>
+      <packageName>com.google.android.gms</packageName>
+      <folderName>play-services-base-11.0.1</folderName>
+    </packagedResource>
+    <packagedResource>
+      <packageName>com.google.android.gms</packageName>
+      <folderName>play-services-basement-11.0.1</folderName>
+    </packagedResource>
+  </packagedResources>
+
 </platform>
