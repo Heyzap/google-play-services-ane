@@ -32,10 +32,13 @@
         <!-- Package compile class files into jar -->
         <jar jarfile="${output.dir}/${output.name}" basedir="${build.dir}" />
 
-        <exec dir="${lib.dir}" executable="./prep.sh" />
+        <exec dir="${lib.dir}" executable="sh">
+          <arg value="prep.sh" />
+          <arg value="${android.sdk}" />
+        </exec>
 
         <zip destfile="${output.dir}/allGoogleDeps.jar">
-          <zipgroupfileset dir="${lib.dir}" includes="*.jar"/>
+          <zipgroupfileset dir="${lib.dir}" includes="*.jar" excludes="FlashRuntimeExtensions.jar"/>
         </zip>
 
         <!-- Copy over files to Android output directory -->

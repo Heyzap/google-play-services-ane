@@ -1,6 +1,6 @@
 #/bin/sh
 set -e
-mvn package
+mvn -Dandroid.sdk.dir=$1 package
 rm -rf res/
 rm -f classes.jar
 mkdir -p res/

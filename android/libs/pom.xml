@@ -14,12 +14,12 @@
     <repository>
       <id>android</id>
       <name>Android m2repository</name>
-      <url>file:///Users/emory/Library/Android/sdk/extras/android/m2repository</url>
+      <url>file://${android.sdk.dir}/extras/android/m2repository</url>
     </repository>
     <repository>
       <id>google</id>
       <name>Google m2repository</name>
-      <url>file:///Users/emory/Library/Android/sdk/extras/google/m2repository</url>
+      <url>file://${android.sdk.dir}/extras/google/m2repository</url>
     </repository>
   </repositories>
 

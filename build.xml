@@ -13,6 +13,7 @@
             <subant inheritall="false" target="@{target}">
                 <property name="output.dir" value="${output.dir}" />
                 <property name="air.sdk" value="${air.sdk}" />
+                <property name="android.sdk" value="${android.sdk}" />
                 <fileset dir="." includes="*/build.xml"/>
             </subant>
         </sequential>
