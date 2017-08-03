@@ -7,9 +7,8 @@ The latest release can be found in [Releases](https://github.com/Heyzap/google-p
 Pull requests and issues are welcome.
 
 #### Google Play Services version
-- Play Services Ads: 8.3.0
-- Android Support v4: 24.2.0 ( with all related libraries )
-
+- Play Services Ads: 11.0.4
+- Android Support v4: 25.3.1 ( with all related libraries )
 
 #### Adding to your project
 
@@ -37,42 +36,20 @@ Pull requests and issues are welcome.
 	```
 
 #### Updating Google Play Services
-Since sdk 30 google broke down Google Play Services into multiple libraries. To find GPS Ads please take a look into:
-`<sdk>/extras/google/m2repository/com/google/android/gms` after updating SDK version to the most recent.
 
-The individual libraries are in `aar` format, so you'll have to extract the jar yourself.
-
-The following `.aar` are used ( along with valid `.jar` names you should use in `android\libs` folder):
-
-play-services-ads-x.x.x.aar -> google-play-services.jar
-play-services-basement-x.x.x.aar ->  play-services-basement.jar
-
-support-v4-x.x.x.aar -> supportv4.jar
-support-core-utils-x.x.x.aar -> support-core-utils.jar,support-core-utils-internal_impl.jar
-support-fragment-x.x.x.aar -> support-fragment.jar,support-fragment-internal_impl.jar
-support-compat-x.x.x.aar -> support-compat.jar
-support-annotations-x.x.x.aar -> support-annotations.jar
-
-
-- Replace all `.jar` files in `android/libs` with a newer version ( in `.aar` version rename classes.jar to valid `.jar`).
-
-- Update `android/platform.xml` with any new android libraries that the newer version might be dependent on. Android libraries can be added under the _packagedDependencies_ tag. The actual `.jar` files can be added to the `andorid/libs` directory.
-
-- Copy all resources ( from every `.aar` ) to `src-resources` folder into valid sub folder. They will be automatically added to the build.
-
-After making the necessary modifications, build the new ANE by following the [building](#building) instructions below.
-
-#### Building
+Make sure your Android SDK is updated to latest. This will always use the latest version available in your local SDK repository.
 
 ##### Requirements:
 - Mac OS X
 - XCode
 - [Apache Ant](http://ant.apache.org/)
+- [Apache Maven](http://maven.apache.org/)
 - [AIR SDK](http://www.adobe.com/devnet/air/air-sdk-download.html)
 
 ##### Building:
 - Make a `build.config` by copying `build.config.dist` (your local config file)
 - Change the path to the AIR SDK in `build.config` (named `air.sdk`)
+- Change the path to the Android SDK in `build.config` (named `android.sdk`)
 - From the root of the repository, run `ant`.
 
 After build completes, the native extension will be in `bin/GooglePlayServices.ane`.
