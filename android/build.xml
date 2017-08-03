@@ -33,6 +33,8 @@
         
         <mkdir dir="${output.dir}/"/>
 
+        <exec executable="${lib.dir}/prep.sh" />
+
         <!-- Copy over files to Android output directory -->
         <copy todir="${output.dir}" failonerror="true">
 

@@ -1,5 +1,6 @@
 #/bin/sh
 mvn package
+mkdir res/
 for filename in *.aar; do
   base=${filename%.aar}
   unzip ${filename} classes.jar
