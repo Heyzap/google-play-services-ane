@@ -42,7 +42,6 @@
             <!-- Copy all resources from resources folder -->
             <fileset dir="${resources.dir}" />
 
-
             <!-- Copy over platform.xml -->
             <file file="platform.xml" />
 
