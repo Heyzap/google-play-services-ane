@@ -2,6 +2,12 @@
 bin/
 build/
 
+# android deps from android sdk
+android/libs/*.aar
+android/libs/play-services-*.jar
+android/libs/support-*.jar
+android/libs/res
+
 # Other files and folders
 .settings/
 

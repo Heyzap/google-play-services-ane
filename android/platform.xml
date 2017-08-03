@@ -1,33 +1,25 @@
 <platform xmlns="http://ns.adobe.com/air/extension/4.0">
 
   <packagedDependencies>
-
-    <packagedDependency>play-services-ads-11.0.1.jar</packagedDependency>
-    <packagedDependency>play-services-ads-lite-11.0.1.jar</packagedDependency>
-    <packagedDependency>play-services-base-11.0.1.jar</packagedDependency>
-    <packagedDependency>play-services-basement-11.0.1.jar</packagedDependency>
-    <packagedDependency>play-services-clearcut-11.0.1.jar</packagedDependency>
-    <packagedDependency>play-services-gass-11.0.1.jar</packagedDependency>
-    <packagedDependency>play-services-safetynet-11.0.1.jar</packagedDependency>
-
+    <packagedDependency>allGoogleDeps.jar</packagedDependency>
   </packagedDependencies>
 
   <packagedResources>
     <packagedResource>
       <packageName>com.google.android.gms.ads</packageName>
-      <folderName>play-services-ads-11.0.1</folderName>
+      <folderName>play-services-ads-11.0.4</folderName>
     </packagedResource>
     <packagedResource>
       <packageName>com.google.android.gms.ads</packageName>
-      <folderName>play-services-ads-lite-11.0.1</folderName>
+      <folderName>play-services-ads-lite-11.0.4</folderName>
     </packagedResource>
     <packagedResource>
       <packageName>com.google.android.gms</packageName>
-      <folderName>play-services-base-11.0.1</folderName>
+      <folderName>play-services-base-11.0.4</folderName>
     </packagedResource>
     <packagedResource>
       <packageName>com.google.android.gms</packageName>
-      <folderName>play-services-basement-11.0.1</folderName>
+      <folderName>play-services-basement-11.0.4</folderName>
     </packagedResource>
   </packagedResources>
 

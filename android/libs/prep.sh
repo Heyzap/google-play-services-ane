@@ -1,11 +1,19 @@
 #/bin/sh
+set -e
 mvn package
-mkdir res/
+rm -rf res/
+rm -f classes.jar
+mkdir -p res/
 for filename in *.aar; do
   base=${filename%.aar}
+
   unzip ${filename} classes.jar
-  unzip ${filename} "res/*" -d res/${base}
-  mv res/${base}/res/** res/${base}/
-  rm -r res/${base}/res
   mv classes.jar ${base}.jar
+
+  unzip ${filename} "res/*" -d res/${base}
+  if [ "$(ls -A res/${base}/res/)" ]; then
+    mv -f res/${base}/res/** res/${base}/
+  else
+    rm -r res/${base}
+  fi
 done

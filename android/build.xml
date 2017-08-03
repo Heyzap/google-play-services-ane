@@ -14,8 +14,9 @@
                 <include name="**/*.jar"/>
             </fileset>
         </path>
-        
+
         <mkdir dir="${build.dir}/"/>
+        <mkdir dir="${output.dir}/"/>
 
         <!-- Compile all Java classes in source directory -->
         <javac
@@ -30,16 +31,15 @@
         
         <!-- Package compile class files into jar -->
         <jar jarfile="${output.dir}/${output.name}" basedir="${build.dir}" />
-        
-        <mkdir dir="${output.dir}/"/>
 
-        <exec executable="${lib.dir}/prep.sh" />
+        <exec dir="${lib.dir}" executable="./prep.sh" />
+
+        <zip destfile="${output.dir}/allGoogleDeps.jar">
+          <zipgroupfileset dir="${lib.dir}" includes="*.jar"/>
+        </zip>
 
         <!-- Copy over files to Android output directory -->
         <copy todir="${output.dir}" failonerror="true">
-
-            <!-- Copy over any extra libs needed - they better be mentioned in the platform.xml! -->
-            <path refid="classpath" />
 
             <!-- Copy all resources from resources folder -->
             <fileset dir="${resources.dir}" />
