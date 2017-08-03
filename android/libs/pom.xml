@@ -5,6 +5,7 @@
   <groupId>com.heyzap.air</groupId>
   <artifactId>gps-ane</artifactId>
   <version>1.0</version>
+  <packaging>pom</packaging>
 
   <name>Maven Quick Start Archetype</name>
   <url>http://maven.apache.org</url>

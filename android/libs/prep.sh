@@ -1,5 +1,5 @@
 #/bin/sh
-
+mvn package
 for filename in *.aar; do
   base=${filename%.aar}
   unzip ${filename} classes.jar
